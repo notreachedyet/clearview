@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Clearview Solutions Pvt Ltd</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="icon" href="logo.ico" type="image/x-icon" sizes="32x32" />
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            flatpickr('#appointment-date', {
+                dateFormat: 'Y-m-d',
+                minDate: 'today',
+                enableTime: false,
+                defaultDate: 'today',
+                altInput: true,
+                altFormat: 'F j',
+                disable: [(date) => date.getDay() === 6],
+                parseDate: (datestr) => {
+                    const currentYear = new Date().getFullYear();
+                    return new Date(`${currentYear}-${datestr}`);
+                }
+            });
+        });
+    </script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#00BE3B" data-border-radius="medium"></script>
+<style>.animate-carousel { animation: carousel 40s linear infinite; } .animate-slide { animation: slide 40s linear infinite; } @keyframes carousel { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } } @keyframes slide { 0%, 100% { opacity: 1; } 33%, 66% { opacity: 0.5; } }
+    .testimonial-track {
+        display: flex;
+        transition: transform 0.05s linear; /* Reduced transition time for faster movement */
+    }
+    
+    .testimonial-group {
+        display: flex;
+        gap: 2rem;
+    }
+    
+    @media (max-width: 768px) {
+        .testimonial-group {
+            gap: 1rem;
+        }
+    }</style></head>
+<body class="font-[&#39;Poppins&#39;] bg-gray-50 max-w-[1920px] mx-auto"><div class="fixed bottom-24 right-8 flex flex-col items-end space-y-2 z-50 animate-[bounce_3s_ease-in-out_infinite]"><div class="bg-white text-gray-800 px-4 py-2 rounded-lg shadow-lg text-sm font-medium relative after:content-[&#39;&#39;] after:absolute after:bottom-[-8px] after:right-6 after:border-l-[8px] after:border-l-transparent after:border-r-[8px] after:border-r-transparent after:border-t-[8px] after:border-t-white">Contact us on WhatsApp</div><a href="https://wa.me/9779842835276" target="_blank" class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 inline-flex items-center justify-center"><i class="fab fa-whatsapp text-3xl"></i></a></div>
+    <nav class="w-full bg-white shadow-sm z-50 max-w-[1920px]">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <img class="h-10 w-auto" src="logo.png" alt="Logo" onclick="window.location.href='index.html'" style="cursor: pointer; background: none;"/>
+                    <a href="index.html" class="text-green-500 text-xl font-bold ml-2 md:text-2xl">Clearview Solutions</a>
+                </div>
+                <div class="flex items-center justify-center flex-grow text-center">
+                    <span class="text-custom font-bold hidden md:inline">"Clear Guidance, Easy Solutions"</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-green-500 hover:text-custom font-medium transition-all duration-300 transform hover:-translate-y-1">Home</a>
+                    <a href="#" class="text-gray-500 hover:text-custom font-medium transition-all duration-300 transform hover:-translate-y-1">About</a>
+                    <a href="#" class="text-gray-500 hover:text-custom font-medium transition-all duration-300 transform hover:-translate-y-1">Services</a>
+                    <a href="#" class="text-gray-500 hover:text-custom font-medium transition-all duration-300 transform hover:-translate-y-1">Testimonials</a>
+                    <a href="contact.html" class="text-gray-500 hover:text-custom font-medium transition-all duration-300 transform hover:-translate-y-1">Contact</a>
+                    <button class="!rounded-button bg-custom text-white px-6 py-2 font-medium hover:bg-blue-800 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg" onclick="window.location.href='contact.html'">Book Consultation</button>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-500 hover:text-custom" onclick="toggleMenu()">Menu</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-16 max-w-[1920px] mx-auto">
+        <section class="bg-white">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="text-4xl font-bold text-gray-900 mb-6">Expert Financial Solutions for Your Business Growth</h1>
+                        <p class="text-lg text-gray-600 mb-8">Chartered Accountant with over 3+ years of experience helping businesses achieve their financial goals through strategic planning and expert advice.</p>
+                        <button class="!rounded-button bg-custom text-white px-8 py-3 font-medium hover:bg-blue-800 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105" onclick="window.location.href='contact.html'">Schedule a Free Consultation</button>
+                    </div>
+                    <div class="relative">
+                        <img src="heroimage.png" alt="Professional CA" class="w-full rounded-lg "/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-50 py-24">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-16">Our Services</h2><div class="w-24 h-1 bg-custom mx-auto -mt-12 mb-8 rounded-full"></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                    <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform border-b-4 border-transparent hover:border-custom relative hover:-translate-y-1 hover:scale-105">
+                        <i class="fas fa-building text-custom text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-4">Company Registration</h3>
+                        <p class="text-gray-600">Complete assistance in company incorporation, documentation, and legal compliance.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform border-b-4 border-transparent hover:border-custom relative hover:-translate-y-1 hover:scale-105">
+                        <i class="fas fa-chart-line text-custom text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-4">Audit Services</h3>
+                        <p class="text-gray-600">Comprehensive audit solutions ensuring compliance and identifying opportunities.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform border-b-4 border-transparent hover:border-custom relative hover:-translate-y-1 hover:scale-105">
+                        <i class="fas fa-calculator text-custom text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-4">Tax Consultancy</h3>
+                        <p class="text-gray-600">Strategic tax planning and compliance services for businesses and individuals.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform border-b-4 border-transparent hover:border-custom relative hover:-translate-y-1 hover:scale-105">
+                        <i class="fas fa-handshake text-custom text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-4">Financial Advisory</h3>
+                        <p class="text-gray-600">Expert financial guidance to help you make informed business decisions.</p>
+                    </div>
+                </div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"><div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform border-b-4 border-transparent hover:border-custom relative hover:-translate-y-1 hover:scale-105"><i class="fas fa-briefcase text-custom text-3xl mb-4"></i><h3 class="text-xl font-semibold mb-4">Business Consulting</h3><p class="text-gray-600">Strategic business consulting to help optimize operations and growth.</p></div><div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform border-b-4 border-transparent hover:border-custom relative hover:-translate-y-1 hover:scale-105"><i class="fas fa-coins text-custom text-3xl mb-4"></i><h3 class="text-xl font-semibold mb-4">Investment Planning</h3><p class="text-gray-600">Expert guidance on investments and portfolio management strategies.</p></div><div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform border-b-4 border-transparent hover:border-custom relative hover:-translate-y-1 hover:scale-105"><i class="fas fa-file-invoice-dollar text-custom text-3xl mb-4"></i><h3 class="text-xl font-semibold mb-4">Financial Reporting</h3><p class="text-gray-600">Comprehensive financial reporting and analysis services.</p></div><div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform border-b-4 border-transparent hover:border-custom relative hover:-translate-y-1 hover:scale-105"><i class="fas fa-balance-scale text-custom text-3xl mb-4"></i><h3 class="text-xl font-semibold mb-4">Risk Management</h3><p class="text-gray-600">Identify and mitigate financial risks to protect your business.</p></div></div>
+            </div>
+        </section>
+
+        <section class="bg-white py-24"><section class="bg-gray-50 py-24"><div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8"><h2 class="text-3xl font-bold text-center text-gray-900 mb-16">Meet Our Team</h2><div class="w-24 h-1 bg-custom mx-auto -mt-12 mb-8 rounded-full"></div><div class="grid grid-cols-1 md:grid-cols-3 gap-8" style="transform: scale(0.8); margin: 0 auto;"><div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2"><img src="pankajgupta.jpg" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover"/><h3 class="text-xl font-semibold text-center mb-2">Pankaj Gupta</h3><p class="text-gray-600 text-center mb-4">MD@Clearview | Amin </p><p class="text-gray-600 text-center">3+ years expertise providing services related to land</p><div class="flex justify-center mt-4 space-x-4"><a href="#" class="text-custom hover:text-blue-800"><i class="fab fa-linkedin"></i></a><a href="#" class="text-custom hover:text-blue-800"><i class="fab fa-twitter"></i></a><a href="https://www.facebook.com/pankaj.k.gupta.161" target="_blank" class="text-custom hover:text-blue-800"><i class="fab fa-facebook"></i></a></div></div><div class="bg-white p-8 rounded-lg shadow-lg transform scale-105 border-2 border-custom relative"><div class="absolute top-0 right-0 bg-custom text-white px-4 py-1 text-sm rounded-bl-lg">Lead Partner</div><img src="prabingupta.jpg" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover"/><h3 class="text-xl font-semibold text-center mb-2">Prabin Gupta</h3><p class="text-gray-600 text-center mb-4">CA from @ICAI & @ICAN</p><p class="text-gray-600 text-center">3+ years of expertise in the field of Tax, Audit, Accontancy</p><div class="flex justify-center mt-4 space-x-4"><a href="https://www.linkedin.com/in/ca-prabin-gupta-938724b5/" target="_blank" class="text-custom hover:text-blue-800"><i class="fab fa-linkedin"></i></a><a href="#" target="_blank" class="text-custom hover:text-blue-800"><i class="fab fa-twitter"></i></a><a href="https://www.facebook.com/prabin.gupta" target="_blank" class="text-custom hover:text-blue-800"><i class="fab fa-facebook"></i></a></div></div><div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2"><img src="abhigupta.jpg" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-6 object-cover"/><h3 class="text-xl font-semibold text-center mb-2">Abhishek Gupta</h3><p class="text-gray-600 text-center mb-4">IT Consultant</p><p class="text-gray-600 text-center">1+ year at helping business come online</p><div class="flex justify-center mt-4 space-x-4"><a href="https://www.linkedin.com/in/notreachedyet" target="_blank" class="text-custom hover:text-blue-800"><i class="fab fa-linkedin"></i></a><a href="https://twitter.com/notreachedyet" target="_blank" class="text-custom hover:text-blue-800"><i class="fab fa-twitter"></i></a><a href="https://www.facebook.com/notreachedyet" target="_blank" class="text-custom hover:text-blue-800"><i class="fab fa-facebook"></i></a></div></div></div></div></section>
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-16">Client Testimonials</h2><div class="w-24 h-1 bg-custom mx-auto -mt-12 mb-8 rounded-full"></div>
+                <div class="relative overflow-hidden" style="position: relative; overflow: hidden; max-width: 100%; margin: 0 auto">
+                    <div class="flex gap-8 animate-carousel" style="width: fit-content; animation: carousel 40s linear infinite">
+                        <div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-all duration-300 transform border-b-4 border-transparent hover:border-custom relative min-w-[320px]"><div class="flex items-center mb-4"><img src="jitesh.jpg" alt="Client" class="w-12 h-12 rounded-full object-cover"/><div class="ml-4"><h4 class="font-semibold"> Jitesh Bam Bam</h4><p class="text-gray-600 text-sm">CEO @ Thali Thakali</p></div></div><div class="flex items-center mb-4"><div class="flex text-yellow-400 hover:scale-110 transition-transform duration-300"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="ml-2 text-sm text-gray-600">5.0</span></div><p class="text-gray-600">&#34;Helped me create my dream business "Thali Thakali" at the heard of the Siraha, helped in registering company, taught how to scale&#34;</p></div><div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-all duration-300 transform border-b-4 border-transparent hover:border-custom relative min-w-[320px]"><div class="flex items-center mb-4"><img src="manish.jpg" alt="Client" class="w-12 h-12 rounded-full object-cover"/><div class="ml-4"><h4 class="font-semibold">Manish Medicine</h4><p class="text-gray-600 text-sm">Founder @ Manish Medicine</p></div></div><div class="flex items-center mb-4"><div class="flex text-yellow-400 hover:scale-110 transition-transform duration-300"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div><span class="ml-2 text-sm text-gray-600">4.5</span></div><p class="text-gray-600">&#34;Helped fix my finances, Audit and Reporting Tax, have proper books of accounts&#34;</p></div><div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-all duration-300 transform border-b-4 border-transparent hover:border-custom relative min-w-[320px]"><div class="flex items-center mb-4"><img src="jitesh.jpg" alt="Client" class="w-12 h-12 rounded-full object-cover"/><div class="ml-4"><h4 class="font-semibold">Jitesh Bam Bam</h4><p class="text-gray-600 text-sm">CEO @ Thali Thakali</p></div></div><div class="flex items-center mb-4"><div class="flex text-yellow-400 hover:scale-110 transition-transform duration-300"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="ml-2 text-sm text-gray-600">5.0</span></div><p class="text-gray-600">&#34;Helped me create my dream business "Thali Thakali" at the heard of the Siraha, helped in registering company, taught how to scale&#34;</p></div><div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-all duration-300 transform border-b-4 border-transparent hover:border-custom relative min-w-[320px]"><div class="flex items-center mb-4"><img src="jitesh.jpg" alt="Client" class="w-12 h-12 rounded-full object-cover"/><div class="ml-4"><h4 class="font-semibold">Jitesh Bam Bam</h4><p class="text-gray-600 text-sm">CEO @ Thali Thakali</p></div></div><div class="flex items-center mb-4"><div class="flex text-yellow-400 hover:scale-110 transition-transform duration-300"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="ml-2 text-sm text-gray-600">5.0</span></div><p class="text-gray-600">&#34;Helped me create my dream business "Thali Thakali" at the heard of the Siraha, helped in registering company, taught how to scale!&#34;</p></div><div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-all duration-300 transform border-b-4 border-transparent hover:border-custom relative min-w-[320px]"><div class="flex items-center mb-4"><img src="manish.jpg" alt="Client" class="w-12 h-12 rounded-full object-cover"/><div class="ml-4"><h4 class="font-semibold">Manish Medicine</h4><p class="text-gray-600 text-sm">Founder @ Manish Medicine</p></div></div><div class="flex items-center mb-4"><div class="flex text-yellow-400 hover:scale-110 transition-transform duration-300"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div><span class="ml-2 text-sm text-gray-600">4.5</span></div><p class="text-gray-600">&#34;Helped fix my finances, Audit and Reporting Tax, have proper books of accounts.&#34;</p></div><div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-all duration-300 transform border-b-4 border-transparent hover:border-custom relative min-w-[320px]"><div class="flex items-center mb-4"><img src="jitesh.jpg" alt="Client" class="w-12 h-12 rounded-full object-cover"/><div class="ml-4"><h4 class="font-semibold">Jitesh Bam Bam</h4><p class="text-gray-600 text-sm">CEO @ Thali Thakali</p></div></div><div class="flex items-center mb-4"><div class="flex text-yellow-400 hover:scale-110 transition-transform duration-300"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="ml-2 text-sm text-gray-600">5.0</span></div><p class="text-gray-600">&#34;Helped me create my dream business "Thali Thakali" at the heard of the Siraha, helped in registering company, taught how to scale.&#34;</p></div></div></div>
+                </div>
+            </div>
+        </section>
+
+   
+        <section class="bg-gray-50 py-24">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-16">Contact Us</h2><div class="w-24 h-1 bg-custom mx-auto -mt-12 mb-8 rounded-full"></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <form class="space-y-6" action="https://formsubmit.co/notreachedyet@gmail.com" method="POST" id="contact-form">
+                            
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_cc" value="notreachedyet@gmail.com,clearviewsolutions801@gmail.com">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-custom focus:border-custom" placeholder="Your name" name="Name" required/>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-custom focus:border-custom" placeholder="your@email.com" name="Email" required/>
+                            </div>
+                           <input type="hidden" name="_template" value="table">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                                <input type="tel" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-custom focus:border-custom" placeholder="Your phone number" name="Phone" required/>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Service Type</label>
+                                <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-custom focus:border-custom" name="Service needed">
+                                    <option value="">Select a service</option>
+                                    <option value="company_registration">Company Registration</option>
+                                    <option value="audit_services">Audit Services</option>
+                                    <option value="tax_consultancy">Tax Consultancy</option>
+                                    <option value="financial_advisory">Financial Advisory</option>
+                                </select>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Date</label>
+                                    <input type="date" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-custom focus:border-custom" id="appointment-date" name="Preffered Date"/>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Time</label>
+                                    <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-custom focus:border-custom" name="Preffered Time">
+                                        <option value="">Select a time slot</option>
+                                        <option value="10-11">10:00 AM - 11:00 AM</option>
+                                        <option value="11-12">11:00 AM - 12:00 PM</option>
+                                        <option value="12-01">12:00 PM - 01:00 PM</option>
+                                        <option value="01-02">01:00 PM - 02:00 PM</option>
+                                        <option value="02-03">02:00 PM - 03:00 PM</option>
+                                        <option value="03-04">03:00 PM - 04:00 PM</option>
+                                        <option value="04-05">04:00 PM - 05:00 PM</option>
+                                        <option value="05-06">05:00 PM - 06:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                                <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-custom focus:border-custom h-32" placeholder="Your message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="!rounded-button w-full bg-custom text-white py-3 font-medium hover:bg-blue-800" id="submit-button">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    <div>
+                        <div class="bg-white p-8 rounded-lg shadow-sm mb-8 hover:shadow-md transition-all duration-300 transform border-b-4 border-transparent hover:border-custom relative hover:-translate-y-1 hover:scale-105">
+                            <h3 class="text-xl font-semibold mb-4">Office Location</h3>
+                            <div class="aspect-w-16 aspect-h-9 mb-4">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.1584469560568!2d86.21300232831594!3d26.66094109103819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2db12df56266cca9%3A0x86b5505761c19e73!2sClearView%20Solutions%20Pvt.%20Ltd.!5e0!3m2!1sen!2sau!4v1740323157556!5m2!1sen!2sau" 
+                                    width="600" 
+                                    height="450" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <p class="text-gray-600 mb-4">Opposite of Krishi Gyan Kendra, Siraha -7, Siraha</p>
+                            <div class="space-y-2">
+                                <p class="flex items-center text-gray-600"><i class="fas fa-phone mr-3"></i> +977 984-2835276</p>
+                                <p class="flex items-center text-gray-600"><i class="fas fa-envelope mr-3"></i> Clearviewsolutions801@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center space-x-6">
+                            <a href="#" class="text-custom hover:text-blue-800"><i class="fab fa-linkedin text-2xl"></i></a>
+                            <a href="#" class="text-custom hover:text-blue-800"><i class="fab fa-twitter text-2xl"></i></a>
+                            <a href="https://www.facebook.com/ClearViewsolutions801" class="text-custom hover:text-blue-800"><i class="fab fa-facebook text-2xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white text-gray-800 py-12 max-w-[1920px] mx-auto">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img class="h-8 w-auto mb-4" src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="Logo"/>
+                    <p class="text-gray-600">Professional accounting services tailored to your business needs.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://www.facebook.com/ClearViewsolutions801" class="text-gray-500 hover:text-custom"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-custom"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-custom"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-custom"><i class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gray-800">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-custom">Home</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-custom">About</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-custom">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-600 hover:text-custom">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gray-800">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-custom">Company Registration</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-custom">Audit Services</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-custom">Tax Consultancy</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-custom">Financial Advisory</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gray-800">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-600"><i class="fas fa-map-marker-alt mr-3"></i> Opposite of Krishi Gyan Kendra, Siraha -7, Siraha</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-phone mr-3"></i> +977 984-2835276</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-envelope mr-3"></i> Clearviewsolutions801@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 mt-12 pt-8 text-center text-gray-600">
+                <p>© 2024 CA Services. All rights reserved.</p>
+                <p>Made with 💓 by <a href="https://www.facebook.com/notreachedyet" class="text-custom hover:text-blue-800">Abhishek Gupta</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const testimonials = document.querySelector('.animate-carousel');
+            let scrollAmount = 0;
+            const scrollStep = 1; // Adjust this value for speed
+            const scrollInterval = setInterval(() => {
+                scrollAmount += scrollStep;
+                testimonials.scrollLeft = scrollAmount;
+
+                // Reset scroll when reaching the end
+                if (scrollAmount >= testimonials.scrollWidth - testimonials.clientWidth) {
+                    scrollAmount = 0;
+                }
+            }, 30); // Adjust this value for the interval speed
+        });
+    </script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const submitButton = document.getElementById('submit-button');
+            submitButton.innerHTML = 'Sending Message... <span class="loader"></span>'; // Change button text
+            submitButton.disabled = true; // Disable the button to prevent multiple submissions
+
+            // Create a FormData object to send the form data
+            const formData = new FormData(this);
+
+            // Send the form data using fetch
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    // Redirect to thankyou.html if the submission is successful
+                    window.location.href = 'thankyou.html';
+                } else {
+                    // Handle errors if needed
+                    alert('There was a problem with your submission. Please try again.');
+                    submitButton.innerHTML = 'Send Message'; // Reset button text
+                    submitButton.disabled = false; // Re-enable the button
+                }
+            }).catch(error => {
+                // Handle network errors
+                alert('There was a problem with your submission. Please try again.');
+                submitButton.innerHTML = 'Send Message'; // Reset button text
+                submitButton.disabled = false; // Re-enable the button
+            });
+        });
+    </script>
+    <style>
+        .loader {
+            border: 2px solid white; /* White border */
+            border-top: 2px solid transparent; /* Transparent top */
+            border-radius: 50%; /* Circular shape */
+            width: 1em; /* Size of the loader */
+            height: 1em; /* Size of the loader */
+            animation: spin 0.6s linear infinite; /* Spin animation */
+            display: inline-block; /* Inline display */
+            margin-left: 0.5em; /* Space between text and loader */
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</body></html>
